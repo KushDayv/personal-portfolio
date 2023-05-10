@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/db606f3cb8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Samuel Thiong'o</h1>
+                  <ul id="sidemenu"> 
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="#projects">Projects</a></li> -->
+                    <li><a href="#contacts">Contacts</a></li>
+
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                  </ul>
+                  
+                  <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>Cyber-security</p> -->
+                <h3>I'm a <span>Cyber Security</span> and <br> <span>Networks enthusiast</span> </h3>
+                
+            </div>
+        </div>
+    </div>
+
+  <!-- ---------------about------------ -->
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/sam.jpg" alt="My pic">
+                       
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello I am a self-driven student who is passionate about what I do both in 
+                        class work and outside class.
+
+                    </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            
+                            <!-- <p class="tab-links"  onclick="opentab('experience')">Experience</p> -->
+                            <p class="tab-links"  onclick="opentab('skills')">Skills</p>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>BSCIT</span><br>Am currently pursuing a Bachelors Degree in  Information 
+                                Technology at Zetech University.</li>
+                                <li><span>Network Associate</span><br>I did a full Networking course with Cisco and got certified as a network 
+                                Associate. Am looking forward to upgrade and have a profesional certificate in the same field </li>
+                                
+                                <li><span>Cyber Security</span><br>I have done a cyber security course with Cisco and awarded a certificate 
+                                on the same. In addition I a have been attending various cyber security boot-camps where i got to 
+                            learn the various skills that I have. More to that I do my research on the new and trending cyber security
+                        issues and educate the students about them. I have so far managed to be among the top 5% of learners in TryHackme.com </li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Cyber-security</span><br>Am well conversant 
+                                with the current trends in the field. I have done penetration testing on 
+                                Metasploitable web server, in addition to being a cyber security track lead under 
+                            Google Developer Students Club (GDSC) community.</li>
+                                <li><span>Network Associate</span><br>Am a network Associate who is certified by Cisco. Am 
+                                able to do the basic network configuration and troubleshooting on various 
+                            networking devices. I also lead a community of network enthusiasts in my Campus. </li>
+                                
+                                <!-- <li><span>UI/UX</span><br>I am an experienced front end developer who has the 
+                                knowledge in the programming languages used in addition to being a UI/UX designer.
+                            This is through joining the web development community we have in the </li> -->
+
+                            </ul>
+                        </div>
+                        <!-- <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>UI/UX</span><br>Am well conversant with languages used in front end development</li>
+                                <li><span>Network Assocaiate</span><br>Am a network Assocaite <br>
+                                who is certified by Cisco and Huawei. </li>
+                                <li><span>Cyber Security</span><br>Am a cyber security leader and students ambassador</li>
+
+                            </ul>
+                        </div> -->
+                       
+                        <div class="navigation">
+                            <a href="#header">Home</a>
+
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------services----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Service</h1>
+            <div class="services-list">
+                <!-- <div> -->
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <!-- <h2>Web design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Ex, perferendis, sequi, nisi tempore harum 
+                        aspernatur officia voluptatum earum vero animi ipsa. Earum, 
+                        eius dolor eaque quibusdam atque quis laboriosam soluta.</p> -->
+
+                        <!-- <a href="#">Learn More</a> -->
+                        
+                <!-- </div> -->
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Network Associate</h2>
+                    <p>I am well conversant with the basic network configurations and troubleshooting 
+                        of networking devices. I also lead a networking community in the Campus where I 
+                    guide the students whose passion is in Networks on how to go about the field</p>
+
+                        <a href="#about">Learn More</a>
+                        
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Cyber Security Trainer</h2>
+                    <p>I am well advanced with the current trends in the field of Cyber Security
+                        and willing to help the newbies in the field to get started with their journey 
+                        in the field
+                    </p>
+
+                        <a href="#about">Learn More</a>
+                        
+                </div>
+            </div>
+            <div class="navigation">
+                <a href="#header">Home</a>
+            </div>
+            <!-- ----------projects----------- -->
+<!-- 
+            <div id="projects">
+                <div class="container">
+                    <div class="sub-title">My projects</div>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/project.jpg" alt="My projects">
+                            <div class="layer">
+                                <h3>Ecommerce Platform</h3>
+                                <p>The place to have the experience you are looking for</p>
+                                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/project1.jpg" alt="My projects">
+                            <div class="layer">
+                                <h3>Internet Connectivity</h3>
+                                <p>Giving you an awesome experience while surfing the web</p>
+                                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/project2.jpeg" alt="My projects">
+                            <div class="layer">
+                                <h3>HackerThon</h3>
+                                <p>Naturing young devs by implementing project based learning</p>
+                                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            < <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+    <!-- <div class="navigation">
+        <a href="#header">Home</a>
+    </div>  -->
+    <!-- -----------contacts----- --> 
+    <div id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                        <p>  <i class="fa-solid fa-paper-plane"></i>  johnsamuelthiongo52@gmail.com</p>
+                        <p> <i class="fa-solid fa-square-phone"></i>  +254 113441490</p>
+                        <p> <i class="fa-brands fa-whatsapp"></i></i> +254 113441490</p>
+                        <div class="social-icons">
+                            <!-- <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-twitter"></i></i></a> -->
+                            
+                            <a href="https://www.linkedin.com/in/john-samuel-kamwaro-b69079240"><i class="fa-brands fa-linkedin"></i></i></a>
+
+                        </div>   
+                        <!-- <a href="images/My CV.pdf" download class="btn btn2" class="btn btn2" >Download CV</a> -->
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> Copyright <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <div class="navigation">
+        <a href="#header">Home</a>
+    </div>
+
+    <script>
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+       }
+       
+
+    </script>
+    
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyguEKRwIkgMO69jKqI3m4y-gTsoAfkhLM1ZWispeH7DE2UtKKYYWiSZ2ivwp-DCB5C/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {console.log('Success!', response)
+    setTimeout(function(){},5000)
+    form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
